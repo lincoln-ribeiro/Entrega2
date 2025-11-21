@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização Música é Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header-->
+   <!--header-->
+    <header>
+        <h1>&#9836; Organização Música é Vida &#9836;</h1>
+        <nav>
+                <ul id="navMenu">
+                <li> <a href="index.html">Página Inicial</a></li>
+                <li> <a href="projeto.html">Projetos e Parcerias</a></li>
+                <li> <a href="cadastro.html" class="active">Cadastro de voluntários</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Hero section-->
+    <section class="hero hero-cadastro">
+        <div class="hero content">
+            <h2>Cadastre-se como Voluntário</h2>
+            <p>Junte-se a nós e faça a diferença na vida de muitas pessoas através do voluntáriado</p>
+        </div>
+    </section>
+
+<!--Formulário de cadastro-->
+    <main>
+        <section class="signup-section">
+           <h2>Formulário de cadastro de voluntários</h2>
+            <form id="VolunteerForm" onsubmit="handleBubmit(event)">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div class="form-group">
+                    <label for="nome">Nome completo: *</label>
+                    <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email">E-mail: *</label>
+                    <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="cpf">CPF: *</label>
+                    <input type="number" id="cpf" name="cpf" placeholder="999.999.999-99" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="nascimento">Data de nascimento: *</label>
+                    <input type="number" id="nascimento" name="nascimento" placeholder="99/99/9999" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="idade">Idade: *</label>
+                    <input type="number" id="idade" name="idade" min="18" max="80" required>
+                    </div>
+                  
+                    <div class="form-group">
+                    <label for="endereco">Endereço: *</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="numero">Número: *</label>
+                    <input type="number" id="numero" name="numero" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bairro">Bairro: *</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="cidade">Cidade: *</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="estado">Estado: *</label>
+                    <input type="text" id="estado" name="estado" placeholder="XX" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="cep">CEP: *</label>
+                    <input type="number" id="cep" name="cep" placeholder="99999-999" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="telefone">Telefone: *</label>
+                    <input type="number" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Disponibilidade</legend>
+                    <div class="form-group">
+                    <label for="disponibilidade">Quando você pode atuar como voluntário</label>
+                    <select id="disponibilidade" name="disponibilidade" required>
+                        <option value="">Selecione...</option>
+                        <option value="finaldesemana">Final de semana</option>
+                        <option value="dias-uteis">Dias úteis</option>
+                        <option value="flexivel">Flexível</option>
+                        <option value="feriados">Feriados</option>
+                    </select>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;2025 Organização Música é Vida - Todos os direitos reservados</p>
+        <p>Juntos, podemos transformar vidas!</p>
+    </footer>
+    
+
+
+</body>
+</html>
