@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--header-->
+   
    <!--header-->
     <header>
         <h1>&#9836; Organização Música é Vida &#9836;</h1>
@@ -21,9 +21,9 @@
     </header>
 <!--Hero section-->
     <section class="hero hero-cadastro">
-        <div class="hero content">
-            <h2>Cadastre-se como Voluntário</h2>
-            <p>Junte-se a nós e faça a diferença na vida de muitas pessoas através do voluntáriado</p>
+        <div class="hero-content">
+            <h1>Cadastre-se como Voluntário</h1>
+            <p>Junte-se a nós e faça a diferença na vida de muitas pessoas através do voluntariado.</p>
         </div>
     </section>
 
@@ -31,6 +31,9 @@
     <main>
         <section class="signup-section">
            <h2>Formulário de cadastro de voluntários</h2>
+           <div class="success-message" id="successMessage">
+                ✅ Cadastro realizado com sucesso! Entraremos em contato em breve.
+            </div>
             <form id="VolunteerForm" onsubmit="handleBubmit(event)">
                 <fieldset>
                     <legend>Dados pessoais</legend>
@@ -109,7 +112,16 @@
                     </select>
                     </div>
                 </fieldset>
+        <button type="submit" class="btn-primary">Enviar Cadastro</button>
             </form>
+           <!-- Lista de Voluntários Cadastrados -->
+            <section class="voluntarios-lista">
+                <h2>Voluntários Cadastrados</h2>
+                <div id="tabelaVoluntarios">                   
+                </div>
+                <button onclick="limparTabela()">Limpar Tabela</button>
+            </section>
+
         </section>
     </main>
     
@@ -118,7 +130,5 @@
         <p>Juntos, podemos transformar vidas!</p>
     </footer>
     
-
-
 </body>
 </html>
